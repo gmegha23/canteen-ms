@@ -1,0 +1,75 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background: #fffae6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  margin: 10px;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 1.6rem;
+  color: #ff6b6b;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.brand:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background: #ff6b6b;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}

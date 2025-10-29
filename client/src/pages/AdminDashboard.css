@@ -1,0 +1,120 @@
+/* Full page background */
+.admin-dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a3d, #3b3b5c);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header / Navbar */
+.dashboard-header {
+  background: linear-gradient(90deg, #ff6a88, #6a82fb);
+  padding: 16px 32px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard content */
+.dashboard-content {
+  padding: 30px;
+}
+
+/* Cards Row */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffdd59;
+}
+
+/* Chart Section */
+.chart-section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+  margin-bottom: 30px;
+}
+
+/* Orders Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.orders-table th {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.orders-table tr {
+  transition: background 0.3s;
+}
+
+.orders-table tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.orders-table td {
+  font-size: 15px;
+}
+
+/* Status colors */
+.status-pending {
+  color: #ffdd59;
+  font-weight: bold;
+}
+
+.status-completed {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: #ff4757;
+  font-weight: bold;
+}

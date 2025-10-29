@@ -1,0 +1,90 @@
+/* Background */
+.admin-feedback-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fbc2eb, #e6dee9, #cfd9df);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main section */
+.feedback-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Header with gradient text */
+.feedback-header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #7e3ff2, #ff5fa2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+/* Error / Loading */
+.error-msg {
+  color: red;
+  font-weight: 600;
+}
+.loading {
+  font-size: 1.2rem;
+  color: #444;
+}
+.no-feedback {
+  background: #fff3cd;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: #856404;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Grid layout */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Glassmorphism Card */
+.feedback-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(128, 0, 128, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Content */
+.feedback-user {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6a11cb;
+  margin-bottom: 0.3rem;
+}
+.feedback-email {
+  font-size: 0.85rem;
+  color: #1557a0;
+  background: #dceeff;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+.feedback-message {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.feedback-date {
+  font-size: 0.8rem;
+  color: #777;
+}
